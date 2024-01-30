@@ -17,7 +17,7 @@ contract SmartVaultToken{
     mapping (address => mapping(address => uint256)) allowed;
 
     constructor(){
-        totalSupply_ = 1000000;
+        totalSupply_ = 1000000 * 10 ** decimals;
         balances[msg.sender] = totalSupply_;
     }
 
