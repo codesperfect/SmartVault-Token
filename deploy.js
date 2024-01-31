@@ -11,6 +11,7 @@ const provider = new HDWalletProvider(
 
 
 const web3 = new Web3(provider);
+provider.setMaxListeners(300);
 
 const abiPath = path.resolve(__dirname,'bin','SmartVaultToken.abi');
 const abi = fs.readFileSync(abiPath,'utf-8');
