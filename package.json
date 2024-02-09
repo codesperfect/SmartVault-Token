@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/codesperfect/SmartVault-Token#readme",
   "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
     "@truffle/hdwallet-provider": "^2.1.15",
     "solc": "^0.8.4",
     "truffle-hdwallet-provider": "^1.0.17",

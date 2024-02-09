@@ -9,9 +9,7 @@ const provider = new HDWalletProvider(
     'https://sepolia.infura.io/v3/515f3227a3b54b1896ce5fe60e7f4992'
 );
 
-
 const web3 = new Web3(provider);
-provider.setMaxListeners(300);
 
 const abiPath = path.resolve(__dirname,'bin','SmartVaultToken.abi');
 const abi = fs.readFileSync(abiPath,'utf-8');
