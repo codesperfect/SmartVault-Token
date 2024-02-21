@@ -4,9 +4,14 @@ const path = require('path');
 const fs = require('fs');
 const { exit } = require('process');
 
+// const provider = new HDWalletProvider(
+//     'dance evidence cheese absorb example inform about cup owner olympic scrub cake',
+//     'https://sepolia.infura.io/v3/515f3227a3b54b1896ce5fe60e7f4992'
+// );
+
 const provider = new HDWalletProvider(
     'dance evidence cheese absorb example inform about cup owner olympic scrub cake',
-    'https://sepolia.infura.io/v3/515f3227a3b54b1896ce5fe60e7f4992'
+    "https://nd-b2dsitmw5fgs7lomgjsqxlgcrq.t.ethereum.managedblockchain.eu-west-2.amazonaws.com/?billingtoken=-meoIpHP2xC1CTCqdPLQOffmfr7fZJkj5n8V553Jzo"
 );
 
 const web3 = new Web3(provider);
@@ -24,5 +29,5 @@ const deploy = async () => {
     console.log('Contract deployed to ',result.options.address);
     exit(0);
 }
-
+ 
 deploy();
